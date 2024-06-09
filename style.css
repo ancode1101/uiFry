@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('path/to/CustomFont-Regular.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--white);
+    font-family: 'CustomFont', sans-serif;
+}
+
+:root {
+    --black-dark: #353535;
+    --black : #000;
+    --white : #fff;
+    --base : #FF5555;
+    --basegold: #FDE598;
+}
+
+nav {
+    z-index: 100;
+    padding-left: 170px;
+    top: 37px;
+    background-color: var(--white);
+    padding-bottom: 10px;
+    display: flex;
+    width: 75%;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    margin-left: 175;
+    position: fixed;
+    font-family: 'CustomFont', sans-serif;
+}
+
+.logo-nav {
+    margin-left: 2%;
+}
+
+.logo-nav img {
+    position: relative;
+    width: 130px;
+    height: 39px;
+}
+
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start; 
+    font-family: 'CustomFont', sans-serif;
+}
+
+.nav-links li {
+    position: relative;
+    font-family:'CustomFont', sans-serif;
+    font-weight: 600;
+    padding: 5px;
+    margin-inline: 1em; 
+    list-style: none;
+}
+
+.nav-links li a:hover {
+    color: var(--base);
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+}
+
+nav .nav-links li a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.17rem;
+    
+    font-family: 'CustomFont', sans-serif;
+}
+
+.nav-button {
+    position: relative;
+    margin-right: -3%; 
+    width: 200px;
+    height: 65px;
+    padding-inline: 2em;
+    padding-block: 1em; 
+    border: none;
+    border-radius: 4px;
+    background-color: var(--black);
+    color: var(--white);
+    transition: 0.4s ease;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'CustomFont', sans-serif;
+    
+}
+
+.overlap-img-container {
+    position: absolute;
+    top: 68px; /* Adjust as needed */
+    left: 94%; /* Adjust as needed */
+    transform: translate(-50%, 0); /* Adjust as needed */
+    z-index: 101; /* Ensure it's above the navbar */
+    pointer-events: none; /* Prevent the image from affecting other elements */
+}
+
+.overlap-img {
+    width: 64px; /* Adjust size as needed */
+    height: 64px; /* Adjust size as needed */
+    pointer-events: auto; /* Allow interaction with the image */
+}
+.overlap-img-container1 {
+    position: absolute;
+    top: 116px; /* Adjust as needed */
+    left: 80px; /* Adjust as needed */
+    transform: translate(-50%, 0); /* Adjust as needed */
+    z-index: 101; /* Ensure it's above the navbar */
+    pointer-events: none; /* Prevent the image from affecting other elements */
+}
+
+.overlap-img1 {
+    width: 48px; /* Adjust size as needed */
+    height: 48px; /* Adjust size as needed */
+    pointer-events: auto; /* Allow interaction with the image */
+    transform: rotate(-22deg);
+}
+
+
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.close-btn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+.main-head-section {
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-bottom: 5%;
+    left: 200px;
+    top: -50px;
+}
+
+.left-text-heading-section {
+    margin-top: 15%;
+    width: 50%;
+    
+}
+
+.left-text-heading-section h1 {
+    color: var(--black);
+    font-size: 64px;
+    font-weight: 800;
+    font-family: 'CustomFont', sans-serif;
+    text-transform: capitalize;
+    width: 690px;
+    height: 128px;
+    opacity: 3000%;
+    line-height: 1;
+    
+}
+
+.left-text-heading-section p {
+    width: 70%;
+    color: var(--black);
+    opacity: 60%;
+    font-size: 18px;
+    font-family:'CustomFont', sans-serif;
+    text-transform: capitalize;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.button-head-section {
+    margin-top: 10px;
+   position: relative;
+}
+
+.Started-btn {
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    /* margin-right: 200px; */
+    font-family: 'CustomFont', sans-serif;
+    /* padding-inline: 40px; */
+    /* padding-block: 20px; */
+    border-radius: 4px;
+    /* text-transform: capitalize; */
+    /* font-weight: ; */
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 195px;
+    height: 63px;
+    text-align:calc(5px);
+}
+
+.arrow{
+    /* color: var(--white);
+    border: #fff; */
+    font-size: 1.5rem; /* Make the arrow larger */
+    /* justify-content: center; */
+    margin-left: 4px;
+    width: 500px;
+}
+
+.Video-btn {
+    cursor: pointer;
+    color: var(--black);
+    background-color: var(--white);
+    border: none;
+    font-family: 'CustomFont', sans-serif;
+    padding-inline: 40px;
+    padding-block: 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.Video-btn i {
+ padding-right: 5px;
+}
+
+
+
+.Video-btn:hover{
+    background-color: var(--base);
+    color: var(--white);
+}
+
+.right-img-heading-section {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    /* transform: translate(-50%, -50%);  */
+} 
+
+.img1 {
+    position: absolute;
+    top: -190px;
+    left: -180px;
+    transform: rotate(0deg);
+    z-index: 3;
+} 
+
+.img2 {
+    position: absolute;
+    top: -110px; 
+    left: -60px; 
+    transform: rotate(0deg); 
+    z-index: 2; 
+}
+
+.img3 {
+    position: absolute;
+    top: -10px; 
+    left: 70px;
+    /* width: 250px; */
+    transform: rotate(0deg); 
+    z-index: 1; 
+} 
+
+.img4 {
+    position: absolute;
+    top:-190px;
+    left: -130px;
+    transform: rotate(0deg);
+}
+
+.bandimg{
+    margin-left: 170px ;
+    margin-top: -120px;
+}
